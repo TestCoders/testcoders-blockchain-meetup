@@ -15,3 +15,13 @@ after that, you can run the tests using the following command:
 ```bash
 truffle test
 ```
+
+## Create smart contract
+```bash
+truffle create contract HelloWorld
+```
+
+## Creating tests
+```bash
+truffle create test HelloWorld
+```
