@@ -21,6 +21,23 @@ truffle test
 truffle create contract HelloWorld
 ```
 
+### Example contract
+```js
+pragma solidity ^0.4.4;
+
+contract HelloWorld {
+    string message = "Hello World!!";
+
+    function HelloWorld() {
+        // constructor
+    }
+
+    function GetMessage() returns (string) {
+        return message;
+    }
+}
+```
+
 ## Creating tests
 ```bash
 truffle create test HelloWorld
