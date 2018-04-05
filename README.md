@@ -22,7 +22,7 @@ truffle create contract HelloWorld
 ```
 
 ### Example contract
-```js
+```solidity
 pragma solidity ^0.4.4;
 
 contract HelloWorld {
