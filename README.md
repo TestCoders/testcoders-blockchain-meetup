@@ -25,3 +25,17 @@ truffle create contract HelloWorld
 ```bash
 truffle create test HelloWorld
 ```
+
+### Example test
+```js
+const HelloWorld = artifacts.require('./HelloWorld.sol');
+
+contract('HelloWorld:GetMessage', (accounts) => {
+  it('Should return a correct string', async () => {
+    let contract = await HelloWorld.deployed();
+    let result = await contract.GetMessage.call();
+    assert.isTrue(result === 'Hello World!!');
+  });
+});
+
+```
