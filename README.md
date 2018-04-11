@@ -2,9 +2,14 @@
 ![Build status master](https://api.travis-ci.org/TestCoders/testcoders-blockchain-meetup.svg?branch=master)
 
 ## Getting started
-Make sure you have `truffle` and `testrpc` installed
+Make sure you have `truffle` and `ganache-cli` installed
 ```bash
-npm install -g truffle ethereumjs-testrpc
+npm install -g truffle npm ganache-cli
+```
+
+Run ganache (formerly known as testrpc)
+```bash
+ganache-cli
 ```
 
 `cd` into the repository directory and run the following command to create build artifacts for the smart contract:
