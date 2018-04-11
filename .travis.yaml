@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "stable"
+
+before_install:
+  - npm install -g truffle ethereumjs-testrpc
+
+script:
+  - testrpc > /dev/null &
+  - sleep 5
+  - truffle migrate
+  - truffle test
