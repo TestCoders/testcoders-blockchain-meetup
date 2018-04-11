@@ -9,16 +9,8 @@ cache:
 before_install:
   - npm install -g truffle ethereumjs-testrpc
 
-jobs:
-  include:
-    - stage: start testrpc
-      install: skip
-      script: 
-        - testrpc > /dev/null &
-        - sleep 5
-    - stage: truffle migrate
-      install: skip
-      script: truffle migrate
-    - stage: test
-      install: skip
-      script: truffle test
+script:
+  - testrpc > /dev/null &
+  - sleep 5
+  - truffle migrate
+  - truffle test
