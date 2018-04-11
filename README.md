@@ -1,4 +1,5 @@
-# testcoders-blockchain-meetup
+# testcoders-blockchain-meetup 
+![Build status master](https://api.travis-ci.org/TestCoders/testcoders-blockchain-meetup.svg?branch=master)
 
 ## Getting started
 Make sure you have `truffle` and `testrpc` installed
