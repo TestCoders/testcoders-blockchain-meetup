@@ -14,7 +14,5 @@ before_install:
   - docker run -d -p 8545:8545 trufflesuite/ganache-cli:latest
 
 script:
-  - testrpc > /dev/null &
-  - sleep 5
   - truffle migrate
   - truffle test
