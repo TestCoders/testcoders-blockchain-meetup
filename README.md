@@ -1,5 +1,4 @@
-# testcoders-blockchain-meetup 
-![Build status master](https://api.travis-ci.org/TestCoders/testcoders-blockchain-meetup.svg?branch=master)
+# testcoders-blockchain-meetup
 
 ## Getting started
 Make sure you have `truffle` and `ganache-cli` installed
