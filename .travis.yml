@@ -2,15 +2,17 @@ language: node_js
 node_js:
   - "stable"
 
+services:
+  - docker
+
 cache:
   directories:
     - node_modules
 
 before_install:
-  - npm install -g truffle ethereumjs-testrpc
+  - npm install -g truffle
+  - docker run -d -p 8545:8545 trufflesuite/ganache-cli:latest
 
 script:
-  - testrpc > /dev/null &
-  - sleep 5
   - truffle migrate
   - truffle test
